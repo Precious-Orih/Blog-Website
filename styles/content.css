@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(255, 222, 234);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0%;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 2.75em;
+    color: palevioletred;
+    margin-bottom: 0%;
+}
+.clickBtn{
+    font-weight:600;
+    font-size: 1.5em;
+    color: rgb(215, 131, 159);
+    margin: 2% 0% 0% 0%;
+}
+h2{
+    font-weight: 900;
+    font-size: 1.25em;
+    color: palevioletred;
+    margin: 1%;
+}
+p:not(.hint){
+background-color: rgb(255, 222, 234);   
+    font-size: .75em;
+    color: rgb(62, 2, 22);
+    margin: 2% auto;
+    padding: 1em;
+    border: 2px palevioletred;
+    border-style: solid;
+    border-radius: 15px;
+    width: 25em;
+}
+li:not(.link-list){
+    font-weight: 900;
+    font-size: .75em;
+    color: rgb(62, 2, 22);
+    list-style-type: none;
+    margin: 2% auto;
+    padding: 1em;
+    border: 2px palevioletred;
+    border-style: solid;
+    border-radius: 15px;
+    width: 30em;
+}
+.hint{
+    font-weight: 100;
+    font-size: 0.5em;
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+
+}
+.post-form1{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+.post-form2 {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+.post-title{
+    background-color: rgb(255, 245, 248);
+    border: 2px palevioletred;
+    border-style: dashed;
+    border-radius: 7.5px;
+    width: 20em;
+    margin: 0;
+    padding: .25em .55em;
+}
+.post-txt{
+    font-size: 12px;
+    background-color: rgb(255, 245, 248);
+    border: 2px palevioletred;
+    border-style: dashed;
+    border-radius: 10px;
+    height: 15em;
+    width: 45em;
+    margin: 0;
+    padding: .75em;
+    resize: none;
+}
+.post-txt:focus, .post-title:focus{
+    border: 2px palevioletred;
+    padding: 1em;
+    border-style: solid;
+    outline: none;
+}
+.post-btn{
+    background-color: palevioletred;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7.5px;
+    width: 5em;
+    height: 2.5em;
+    margin: 1em 0;
+    
+}
+.btm, .btm a{
+    background-color: rgb(255, 240, 247);
+    color: palevioletred;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7.5px;
+    width: fit-content;
+    height: 2.5em;
+    margin: 1em 0;
+    padding: .5em .75em;
+    outline: none;
+}
+.posts{
+    background-color: rgb(255, 205, 222);
+    width: 30em;
+    border: 2px palevioletred;
+    padding: 1em;
+    border-style: dashed;
+    border-radius: 25px;
+    margin: 2em auto 1em auto;
+}
+.editanddelete{
+    margin: 0 0 3em 0;
+    display: flex;
+    gap: 15em;
+    justify-content: center;
+}
+.edit, .delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 240, 247);
+    background-color: palevioletred;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .85em;
+    font-weight: 600;
+    border: none;
+    border-radius: 7.5px;
+    width: 4em;
+    height: 1.5em;
+    margin: 0;
+    padding: .5em;
+    outline: none;
+}
+.delete{
+    border-radius: 6.5px;
+    width: 5em;
+    height: 2.62em;
+}

@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <h1>Welcome!</h1>
+    <h2 class="clickBtn">Click The Button to Create Your Post</h2>
+    <p class="hint">Don't forget to keep it short😊</p>
+
+   
+    <div id="posts">
+            <% allPosts.forEach(post=> { %>
+                <% if (post.content && post.title) { %>
+                    <div class="posts">
+                        <h2>
+                            <%= post.title %>
+                        </h2>
+                        <p>
+                            <%= post.content %>
+                        </p>
+                    </div>
+                    <div class="editanddelete">
+                        <a href="/edit/<%= post.id %>" class="edit">Edit</a>
+                        <form method="post" action="/delete/<%= post.id %>">
+                            <button type="submit" class="delete">Delete</button>
+                        </form>
+                    </div>
+                    
+                    
+                    <% } else if (!post.content){ %>
+                        <div class="posts">
+                            <p>you need content!</p>
+                        </div>
+                        <% } else if (!post.title) { %>
+                            <div class="posts">
+                                <h2>No title</h2>
+                                <p>
+                                    <%= post.content %>
+                                </p>
+                            </div>
+                            <% } %>
+            
+                               
+            
+                                <% }); %>
+        
+               
+  
+    </div>
+      <button class="btm"><a href="/post">Create Post</a></button>
+   <%- include("partials/footer.ejs") %>
+</body>
